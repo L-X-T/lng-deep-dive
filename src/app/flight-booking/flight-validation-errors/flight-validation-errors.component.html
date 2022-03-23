@@ -11,3 +11,5 @@
 <div class="alert alert-danger" *ngIf="errors?.city" role="alert"> {{ fieldLabel }} needs to be a city. </div>
 
 <div class="alert alert-danger" *ngIf="errors?.asyncCity" role="alert"> Async: No flights found with that "{{ fieldLabel }}". </div>
+
+<div class="alert alert-danger" *ngIf="errors?.roundTrip" role="alert"> Round trips are not allowed! </div>
