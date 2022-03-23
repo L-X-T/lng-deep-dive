@@ -13,3 +13,7 @@
 <div class="alert alert-danger" *ngIf="errors?.asyncCity" role="alert"> Async: No flights found with that "{{ fieldLabel }}". </div>
 
 <div class="alert alert-danger" *ngIf="errors?.roundTrip" role="alert"> Round trips are not allowed! </div>
+
+<div class="alert alert-danger" *ngIf="errors?.asyncMulti" role="alert">
+  No trips were found from {{ errors?.asyncMulti?.from }} to {{ errors?.asyncMulti?.to }}!
+</div>
